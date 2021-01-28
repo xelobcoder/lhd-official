@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="page-wrapper col-12 d-flex">
+       <div class="sidebar col-3 ">
+           <ul>
+               <li >
+                   <div class="number">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                   </div>
+                   <div class="text">
+                    personal information
+                   </div>
+               </li>
+               <li>
+                <div class="number">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    Organization Details
+                   </div>
+               </li>
+               <li>
+                <div class="number">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    Payment Details
+                </div>
+
+               </li>
+               <li>
+                <div class="number">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                   Password
+                </div>
+                
+               </li>
+           </ul>
+       </div>
+       <div class="mainbar col-9">
+           <form action="" method="post">
+               <section id="personal-information">
+                <div class="row">
+                    <div class="col">
+                        <label for="">firstname</label>
+                        <input type="text" name="firstname" id="firstname" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="">Lastname</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                      <div class="col">
+                          <label for="">Mobile Number</label>
+                           <input type="tel" name="mobile" id="mobile" class="form-control">
+                      </div>
+                      <div class="col">
+                        <label for="">Date of birth </label>
+                         <input type="date" name="date" id="date" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Gender</label>
+                       
+
+                    </div>
+                    <div class="col">
+                        <div class="col">
+                            <label for="">email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" id="next" class="btn btn-outline-primary">Next</button>
+                </div>
+               </section>
+               <section id="organizational-information">
+                <div class="row">
+                    <div class="col">
+                        <label for="">Organization Name</label>
+                        <input type="text" name="organization" id="organization" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="">Region</label>
+                        <input type="text" name="region" id="region" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">city</label>
+                        <input type="text" name="city" id="city" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="">Street Address</label>
+                        <input type="text" name="street" id="street" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Post Code</label>
+                        <input class="form-control" id="post" name="post">  
+                    </div>
+                </div>
+                <div class="row mt-5 d-flex" id="nextprev">
+                    <button type="button" id="previous" class="btn btn-outline-primary ">Previous</button>
+                    <button type="button" id="next" class="btn btn-outline-primary">Next</button>
+                </div>
+               </section>
+               <section id="payment-information">
+                     <div class="row">
+                         <div class="col">
+                             <label for="">Payment mode</label>
+                              <select name="payment" id="payment" class="form-control">
+                                  <option value="Cash">Cash</option>
+                                  <option value="Momo">Momo</option>
+                              </select>
+
+                         </div>
+                         
+                     </div>
+                     <div class="row">
+                         <div class="col">
+                             <label for="">Mobile money number</label>
+                             <input type="number" class="form-control" id="momo-number" name="momo">
+                         </div>
+                         <div class="col">
+                             <label for="">Name on Momo</label>
+                             <input type="text" name="" id="momo-name" class="form-control">
+                         </div>
+                     </div>
+                     <div class="row d-flex mt-5" id="nextprev">
+                         <button type="button" id="previous" class="btn btn-outline-primary">Previous</button>
+                         <button type="button" id="next" class="btn btn-outline-primary">Next</button>
+                     </div>
+               </section>
+               <section id="password-information">
+                   <div class="row">
+                       <div class="col">
+                           <label for="">upload image</label>
+                           <input type="file" name="file" id="file" class="form-control">
+                       </div>
+                   </div>
+                     <div class="row">
+                         <div class="col">
+                             <label for="">password</label>
+                             <input type="password" name="password" id="password" class="form-control">
+                         </div>
+                         <div class="col">
+                             <label for="">Confirm password</label>
+                             <input type="password" name="confirm-password" id="confirm-password" class="form-control">
+                         </div>
+                     </div>
+                     <div class="row d-flex mt-5"  id="nextprev">
+                         <button type="button" class="btn btn-outline-primary" id="previous">Previous</button>
+                         <button type="button" class="btn btn-outline-primary" id="save">Save</button>
+                     </div>
+               </section>
+           </form>
+       </div>
+   </div>
+   <script src="/js/register.js"></script>
+</body>
+</html>

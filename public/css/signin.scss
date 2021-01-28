@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // background-color: whitesmoke;
+    color:black;
+    max-width: 100%;
+    max-height: 100%;
+    // overflow: hidden;
+
+}
+input{
+    border-radius: 0px !important;
+    padding: 25px 20px !important;
+}
+input:hover,input:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+button{
+    border-radius: 0px !important;
+    text-transform: capitalize;
+}
+
+
+
+
+@media (max-width: 576px) {
+    #top-img{
+        height: 50vh;
+        width: 100%;
+    }
+    .page-wrapper{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    #toppler{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #signin{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+@media (max-width: 768px){
+    #top-img{
+        height: 50vh;
+        width: 100%;
+    }
+    .page-wrapper{
+        height: 100vh;
+        width: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    #toppler{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #signin{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }  
+}
+@media (min-width: 992px) {
+    #top-img{
+        width: 100%;
+        height: 100vh;
+    }
+.page-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    #toppler{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #signin{
+        grid-column:2/4;
+        grid-row: 1/2;
+    }
+}
+#signin{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+}
+}
+@media (min-width: 1200px){
+    #top-img{
+        width: 100%;
+        height: 100vh;
+    }
+    .page-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        #toppler{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        #signin{
+            grid-column:2/4;
+            grid-row: 1/2;
+        }
+    }
+    #signin{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20%;
+    }    
+}

@@ -1,0 +1,133 @@
+input::-webkit-input-placeholder {
+  color: gray;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input:-ms-input-placeholder {
+  color: gray;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input::-ms-input-placeholder {
+  color: gray;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input::placeholder {
+  color: gray;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input:placeholder-shown {
+  color: #4a3d57;
+}
+
+section {
+  margin: 0;
+}
+
+section .form-control {
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3fr;
+      grid-template-rows: 3fr;
+}
+
+section .form-control .input {
+  margin: 20px;
+  padding: 20px;
+  width: auto;
+  border: 1.2px solid lightblue;
+}
+
+section .form-control .input:focus {
+  outline: none;
+}
+
+section .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.login {
+  display: none;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: auto;
+  padding: 10px 20px;
+}
+
+.btn-outline {
+  background-color: white;
+  border: 1px solid lightgray;
+  color: gray;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 1.0 rem;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+input:required:focus {
+  border: 1px solid red;
+}
+
+input:required:hover {
+  opacity: 1;
+}
+
+input:required + ::-webkit-input-placeholder {
+  color: red;
+}
+
+input:required + :-ms-input-placeholder {
+  color: red;
+}
+
+input:required + ::-ms-input-placeholder {
+  color: red;
+}
+
+input:required + ::placeholder {
+  color: red;
+}
+/*# sourceMappingURL=input.css.map */
