@@ -12,8 +12,17 @@ app.get("/dashboard",function(req,res){
     res.render("dashboard");
 })
 
+app.get("/register",function(req,res){
+    res.render("register")
+})
 
+app.get("/signin",function(req,res){
+    res.render("signin")
+})
 
+app.get("/start",function(req,res){
+    res.render("start")
+})
 
 
 
